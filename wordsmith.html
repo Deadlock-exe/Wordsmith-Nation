@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordsmith Nation</title>
+    <script src="https://kit.fontawesome.com/b81fd7f057.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;                            /* page ke edge pe wo 8px hatane ko */
+                padding: 0;
+            }
+            .navbar{
+                background-color: rgb(90, 76, 101);
+                margin: auto;                          /* the main bar itself */
+                padding: 10px;
+                padding-inline-start: 70px;
+                padding-inline-end: 70px;
+                flex: auto;
+            }
+            .navbar ul{
+                overflow: auto;                        /* the list outline */
+                margin: auto;
+            }
+            .navbar li{
+                list-style: none;
+                float: left;                           /* the list item as a whole */
+                padding: 20px;
+            }
+            .navbar li a{
+                text-decoration: none;
+                padding: 0px;                           /* the list item ke contents */
+                color: rgb(195, 194, 194);
+                margin: auto;
+            }
+            .navbar li a:hover{
+                color: rgb(255, 255, 255);
+            }
+            
+            .logo{
+                display: inline;
+                margin: auto;
+                width: auto;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                position: relative;
+                padding-right: 218px;
+            }
+            #wn{
+                width: 60px;
+            }
+            h1{
+                font-family: 'Roboto Condensed', cursive;;
+            }
+            
+        </style>
+        <!--navigation bar with the logo-->
+        <nav class="navbar">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                    <div class="logo">
+                        <img id="wn" src="Wordsmith nation (1).png" alt="logo">
+                    </div>
+                </ul>
+        </nav>
+    </header>
+
+
+    <style>
+        .intro{
+            text-align: center;
+            background-image: url(wn_bg_1.png);
+            height: 700px;
+        }
+
+        #heading{
+            font-family: 'Roboto Condensed', cursive;
+            font-size: 67px;
+            margin: auto;
+        }
+
+        #introduction{
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+            padding: 30px;
+        }
+        p{
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .btn{
+            background-color: rgb(156 191 207);
+            padding: 13px;
+            border: 1px solid rgb(179, 179, 179);
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(98, 129, 142);
+        }
+        .inside_intro{
+            /* border: 2px solid black; */
+            margin: 0 270px;
+            padding-top: 180px;   /* wo intro box ki position */
+        }
+
+    </style>
+    <div class="intro">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+
+        <div class="inside_intro">
+            <h1 id="heading">Professional Content Writing Agency</h1>
+            <p id="introduction">Wordsmith Nation is a content writing business, providing high-quality services to businesses. We specialize in crafting compelling stories that engage audiences and help clients achieve their marketing goals.</p>
+            <button class="btn">LEARN MORE</button>
+        </div>
+
+    </div>
+
+
+
+
+    <style>
+        .article{
+            background-color: rgb(51, 51, 51);
+            height: 400px;
+            padding: 60px;
+            display: flex;
+            padding-left: 95px;
+        }
+        .article_text{
+            width: 50%; 
+            float: right;
+            padding-top: 40px;
+            padding-left: 110px;
+        }
+        #article_heading{
+            color: rgb(237, 237, 237);
+            font-family: 'Roboto Condensed', cursive;
+            padding: 2px;
+
+        }
+        .article_para{
+            color: rgb(237, 237, 237);
+            padding-top: 17px;
+            padding-bottom: 45px;
+        }
+        img{
+            width: 500px;
+            
+        }
+
+    </style>
+    <div class="article">
+        <div class="article_img">
+            <img src="article.png" alt="article">
+        </div>
+        <div class="article_text">
+            <h1 id="article_heading">Article Writing</h1>
+            <p class="article_para">Writing and producing original, informative and engaging articles for web publication.</p>
+            <button class="btn">Contact</button>
+        </div>
+
+    </div>
+
+
+
+
+    <style>
+        .services{
+            height: 880px;
+            background-color: rgb(145, 128, 151);
+            padding: 75px;
+        
+        }
+        .service_column{
+            display: flex;
+        }
+        .services_heading{
+            font-family: 'Roboto Condensed', cursive;
+            color: rgb(17, 24, 39);
+            font-size: 45px;
+            padding-bottom: 20px;
+            margin: 20px;
+            display: inline-block;
+        }
+        .service1{
+            width: 30%;
+            margin: 0 auto;
+
+        }
+        .service1_img{
+            width: 383px;
+        }
+        .service1_heading{
+            padding-top: 15px;
+        }
+        .service1_para{
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+    </style>
+    <div class="services">
+        <h1 class="services_heading">Our Services</h1>
+        <div class="service_column">
+
+
+            <div class="service1">
+                <img class="service1_img" src="service1.png" alt="service1">
+                <h1 class="service1_heading">SEO Content Writing</h1>
+                <p class="service1_para">This service focuses on creating content that is optimized for search engine rankings. It involves researching keywords, crafting high quality content with the right keyword density, and ensuring that the content is well written and engaging.</p>
+                <button class="btn">More Info</button>
+            </div>
+    
+    
+            <div class="service1">
+                <img class="service1_img" src="service2.png" alt="service2">
+                <h1 class="service1_heading">Copywriting</h1>
+                <p class="service1_para">This service involves creating content that is persuasive and sales focused. Copywriters are skilled at using language to evoke emotions, build trust, and ultimately convince readers to take action.</p>
+                <button class="btn">More Info</button>
+            </div>
+    
+    
+            <div class="service1">
+                <img class="service1_img" src="service3.png" alt="service3">
+                <h1 class="service1_heading">Social Media Content Writing</h1>
+                <p class="service1_para">This service focuses on creating content specifically tailored for social media platforms. It might involve crafting captivating headlines, creating engaging visual content, and crafting clever copy that encourages people to share your content.</p>
+                <button class="btn">More Info</button>
+    
+    
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .review{
+            padding-left: 95px;
+            padding-top: 75px;
+            padding-bottom: 75px;
+            padding-right: 95px;
+            background-color: rgb(230, 218, 210);
+        }
+        .name_review{
+            font-size: 20px;
+            padding: 10px;
+        }
+
+    </style>
+    <div class="review">
+        <h1 class="para_review">Wordsmith Nation is a great Content Writing business. They provided us with an amazing article that was well-researched and well-written. They delivered the job on time and their customer service was top-notch. Highly recommended!</h1>
+        <p class="name_review">-Nikansha N.</p>
+    </div>
+
+
+
+    <style>
+        .blogs{
+            height: 1550px;
+            background-color: rgb(51 51 51);
+            padding: 95px;
+        }   
+        .blogs_heading{
+            font-size: 50px;
+            color: rgb(224, 224, 224);
+        }
+        .blogs_main{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+        .blogs_topics{
+            width: 31.5%;
+            padding-top: 20px;
+
+        }
+        .subheading{
+            color: rgb(255, 255, 255);
+            padding-top: 25px;
+        }
+        .blog{
+            color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+        .img_blogs{
+            width: 24.3rem;
+            height: 24.3rem;
+        }
+    </style>
+    <div class="blogs">
+        <h1 class="blogs_heading">Our Works</h1>
+
+        <div class="blogs_main">
+
+
+            <div class="blogs_topics" id="topic1">
+                <img class="img_blogs" src="blog1.png" alt="">
+                <h1 class="subheading">Artificial Intelligence in Healthcare</h1>
+                <p class="blog">An informative blog on how the healthcare industry is being transformed by the power of artificial intelligence (AI).</p>
+                <button class="btn">Check Out</button>
+
+            </div>
+
+
+            <div class="blogs_topics" id="topic2">
+                <img class="img_blogs" src="blog2.png" alt="">
+                <h1 class="subheading">Sustainable Living: Tips for Eco-Friendly Lifestyle Choices</h1>
+                <p class="blog">COMING OUT SOON</p>
+                <button class="btn">Check Out</button>
+
+            </div>
+
+
+            <div class="blogs_topics" id="topic3">
+                <img class="img_blogs" src="blog3.png" alt="">
+                <h1 class="subheading">Exploring the Future of Virtual Reality and Augmented Reality</h1>
+                <p class="blog">COMING OUT SOON</p>
+                <button class="btn">Check Out</button>
+
+            </div>
+             
+
+            <div class="blogs_topics" id="topic3">
+                <img class="img_blogs" src="blog4.png" alt="">
+                <h1 class="subheading">The Rise of E-commerce: Trends and Strategies for Online Success</h1>
+                <p class="blog">COMING OUT SOON</p>
+                <button class="btn">Check Out</button>
+
+            </div>
+
+
+            <div class="blogs_topics" id="topic3">
+                <img class="img_blogs" src="blog5.png" alt="">
+                <h1 class="subheading">Mental Health and Wellness: Understanding the Importance of Self-Care</h1>
+                <p class="blog">COMING OUT SOON</p>
+                <button class="btn">Check Out</button>
+
+            </div>
+
+
+            <div class="blogs_topics" id="topic3">
+                <img class="img_blogs" src="blog6.png" alt="">
+                <h1 class="subheading">Cybersecurity Best Practices for Protecting Your Digital Life</h1>
+                <p class="blog">COMING OUT SOON</p>
+                <button class="btn">Check Out</button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <style>
+        .outro{
+            background-color: rgb(145, 128, 151);
+            height: 500px;
+            display: flex;
+            padding: 75px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .contact{
+            width: 47%;
+        }
+        .contact_heading{
+            font-size: 26px;
+            padding-bottom: 60px;
+        }
+        .inputbox1{
+            background-color: rgb(123, 105, 130);
+            border: none;
+            width: 100%;
+            height: 40px;
+        }
+        .inputbox2{
+            background-color: rgb(123, 105, 130);
+            border: none;
+            width: 100%;
+            height: 150px;
+        }
+        .topbox{
+            display: flex;
+            justify-content: space-between;
+        }
+        .bottombox{
+            padding-top: 25px;
+        }
+        #name{
+            width: 48%;
+        }
+        #mail{
+            width: 48%;
+        }
+        .send{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+        #captcha{
+            font-size: 12px;
+            padding-right: 10px;
+        }
+        #submit{
+            width: 130px;
+        }
+        .boxtype{
+            padding-bottom: 3px;
+            font-size: 13px;
+        }
+
+    </style>
+    <div class="outro">
+
+
+        <div class="contact" id="contact">
+            <h1 class="contact_heading">Contact Wordsmith Nation</h1>
+            <p class="content_text">Get in touch with our content writing experts at Wordsmith Nation to discuss your project needs and pricing.</p>
+        </div>
+
+        <div class="contact" id="details">
+
+            <div class="topbox">
+                <div id="name">
+                    <p class="boxtype">Name</p>
+                    <input class="inputbox1" type="text" id="namebox">
+                </div>
+    
+    
+                <div id="mail">
+                    <p class="boxtype">E-mail</p>
+                    <input class="inputbox1" type="email" id="mailbox">
+                </div>
+            </div>
+            
+
+            <div class="bottombox">
+                <div id="message">
+                    <p class="boxtype">Message</p>
+                    <input class="inputbox2" type="text" id="messagebox">
+                </div>
+            </div>
+            <div class="send">
+                <p id="captcha">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+                <button class="btn" id="submit">Send</button>
+            </div>
+                
+
+        </div>
+
+
+    </div>
+
+
+
+    <style>
+        .footer{
+            height: 400px;
+            background-color: rgb(51, 51, 51);
+            color: rgb(237, 237, 237);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            
+        }
+        .things{
+            text-align: center;   
+            margin: auto;
+              
+        }
+        #footer_heading{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        #home{
+            text-decoration: none;
+            color: rgb(237, 237, 237);
+        }
+        #homebutton{
+            padding: 2px;
+    
+        }
+        .footer_logos{
+            display: inline-block;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 55px;
+        }
+        .footer_logos a{
+            text-decoration: none;
+            color: rgb(237, 237, 237);
+        }
+        .footer_logos a:hover{
+            color: rgb(175, 175, 175);
+        }
+    </style>
+    <div class="footer">
+        <div class="things">
+            <h1 id="footer_heading">Wordsmith Nation</h1>
+            <a href="http://127.0.0.1:5500/wordsmith/wordsmith.html" id="home"><p id="homebutton">Home</p></a>
+
+            <div class="footer_logos">
+
+
+                <div class="facebook">
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                </div>
+
+                <div class="instagram">
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </div>
+
+                <div class="twitter">
+                    <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                </div>
+
+                <!-- <ul class="foot">
+                    <li><a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                </ul> -->
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
