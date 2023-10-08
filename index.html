@@ -8,7 +8,6 @@
     <title>Wordsmith Nation</title>
     <script src="https://kit.fontawesome.com/b81fd7f057.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="Wordsmith_nation__1_-removebg-preview.png" type="image/x-icon">
-
 </head>
 
 <body>
@@ -18,6 +17,9 @@
                 box-sizing: border-box;
                 margin: 0;                            /* page ke edge pe wo 8px hatane ko */
                 padding: 0;
+            }
+            html{
+                scroll-behavior: smooth;
             }
             .navbar{
                 background-color: rgb(90, 76, 101);
@@ -81,7 +83,8 @@
     <style>
         .intro{
             text-align: center;
-            background-image: url(wn_bg_1.png);
+            background-image: url(bg.png);
+            background-size: cover;
             height: 700px;
         }
 
@@ -101,23 +104,70 @@
         }
 
         .btn{
-            background-color: rgb(156 191 207);
+            background-color: #D7CABF;
+            border: 2px solid #D7CABF;
             padding: 13px;
-            border: 1px solid rgb(179, 179, 179);
             cursor: pointer;
+            transition: 0.3s;
+            border-radius: 10px;
         }
         .btn:hover{
-            background-color: rgb(98, 129, 142);
+            color: white;
+            background-color: #ba9d85;
+            transition: 0.3s;
         }
-        .inside_intro{
-            /* border: 2px solid black; */
-            margin: 0 270px;
-            padding-top: 180px;   /* wo intro box ki position */
+        .intro{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 5rem 3rem;
         }
+        .intro_left{
+            width: 70%;
+            border-radius: 20px;
+            padding: 3rem 6rem;
+        }
+        .inside_intro_left{
+            background-color: #FDF1E7;
+            border-radius: 20px;
+            padding: 2rem 6rem;
+            margin-bottom: 1rem;
+        }
+        .intro_right{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 25%;
+            background-color: #FDF1E7;
+            height: 100%;
+            border-radius: 20px;
+        }
+        .intro_left h1{
+            padding: 0.5rem 0;
+        }
+        .section{
+            background-color: #D7CABF;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 1rem;
+            color: black;
+        }
+        .section:hover{
+            transform: scale(1.03);
+        }
+        a{
+            text-decoration: none;
+        }
+        .intro_spam{
+            height: 250px;
+            border-radius: 20px;
+            background-color: #FDF1E7;
+            margin-top: 50px;
+        }
+        
 
     </style>
     <div class="intro">
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -125,13 +175,34 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto+Condensed&display=swap" rel="stylesheet">
-
-
-        <div class="inside_intro">
-            <h1 id="heading">Professional Content Writing Agency</h1>
-            <p id="introduction">Wordsmith Nation is a content writing business, providing high-quality services to businesses. We specialize in crafting compelling stories that engage audiences and help clients achieve their marketing goals.</p>
-            <button class="btn">LEARN MORE</button>
+        <div class="intro_left">
+            <div class="inside_intro_left">
+                <div class="intro_heading">
+                    <h1>WORDSMITH NATION</h1>
+                    <p>Wordsmith Nation is a content writing business, providing high-quality services to businesses. We specialize in crafting compelling stories that engage audiences and help clients achieve their marketing goals</p>
+                    <br>
+                    <button class="btn">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="intro_spam">
+            </div>
         </div>
+        <div class="intro_right">
+            <div>
+                <a href="#services">
+                    <div class="section">SERVICES</div>
+                </a>
+                <a href="#works">
+                    <div class="section">WORKS</div>
+                </a>
+                <a href="#contact">
+                    <div class="section">CONTACT</div>
+                </a>
+                
+            </div>
+        </div>
+
+
 
     </div>
 
@@ -219,7 +290,7 @@
         }
 
     </style>
-    <div class="services">
+    <div class="services"  id="services">
         <h1 class="services_heading">Our Services</h1>
         <div class="service_column">
 
@@ -235,7 +306,7 @@
             <div class="service1">
                 <img class="service1_img" src="service2.png" alt="service2">
                 <h1 class="service1_heading">Copywriting</h1>
-                <p class="service1_para">This service involves creating content that is persuasive and sales focused. Copywriters are skilled at using language to evoke emotions, build trust, and ultimately convince readers to take action.</p>
+                <p class="service1_para">This service involves creating content that is persuasive and sales focused.Copywriters are skilled at using language to evoke emotions, build trust, and ultimately convince readers to take action.</p>
                 <button class="btn">More Info</button>
             </div>
     
@@ -308,7 +379,7 @@
             height: 24.3rem;
         }
     </style>
-    <div class="blogs">
+    <div class="blogs" id="works">
         <h1 class="blogs_heading">Our Works</h1>
 
         <div class="blogs_main">
@@ -433,7 +504,7 @@
         }
 
     </style>
-    <div class="outro">
+    <div class="outro" id="contact">
 
 
         <div class="contact" id="contact">
